@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'icomoon-login-manual';
+  src:  url('fonts/icomoon-login-manual.eot?7c6qrr');
+  src:  url('fonts/icomoon-login-manual.eot?7c6qrr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-login-manual.ttf?7c6qrr') format('truetype'),
+    url('fonts/icomoon-login-manual.woff?7c6qrr') format('woff'),
+    url('fonts/icomoon-login-manual.svg?7c6qrr#icomoon-login-manual') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-login-manual' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-location:before {
+  content: "\e947";
+}

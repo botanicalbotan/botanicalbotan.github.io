@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="asset/icon.css">
+        <link rel="icon" href="asset\images\tabicon\tabicon.png">
+        <title>Pasaran APP</title>
+        <style>
+            .bg-radaitem{
+                background-color: #2A2B2A;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-light">
+            <span class="navbar-brand mb-0 h1">PASARAN APP</span>
+            <button class="btn btn-outline-light" id="btLokasi"><i class="icon-map-marker pr-1 text-danger"></i> Ps. <span id="btnamapasar">Karanggede</button>
+            <!-- <span aria-hidden="true" data-icon="&#xe001;" class="icon-map-marker"> Pasar Karanggede</span> -->
+            <!-- <span class="border border-dark p-1 pr-2 pl-2"><i class="icon-map-marker pr-1"></i>Pasar Karanggede</span> -->
+        </nav>
+        <div class="jumbotron jumbotron-fluid" id="firstJumbo">
+            <div class="container text-center">
+                <p class="lead font-weight-bold" id="todaysDate"></p>
+                <h1 class="display-4 text-white" id="announcement"></h1>
+                <hr class="bg-white mt-5">
+                <p class="lead text-light" id="additionalAnnouncement"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <h2>Kenapa dengan hari pasaran?</h2>
+                </div>
+            </div>
+
+            <div class="row mb-5 justify-content-sm-center">
+                <div class="col-sm-3 col-12 mb-2">
+                    <div class="container h-100 p-3 border border-gray rounded-lg shadow text-center">
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-6">
+                                <img class="img-fluid" src="asset/images/time.png" alt="more people">
+                            </div>
+                        </div>
+                        <h5>Jam aktif lebih lebar</h5>
+                        <p>Saat hari pasaran, pasar akan cenderung ramai lebih pagi dari biasanya, dan sepi lebih larut dari biasanya</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 mb-2">
+                    <div class="container h-100 p-3 border border-gray rounded-lg shadow text-center">
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-6">
+                                <img class="img-fluid" src="asset/images/audience.png" alt="">
+                            </div>
+                        </div>
+                        <h5>Lebih Ramai</h5>
+                        <p>Akan lebih banyak pedagang dan pelanggan berdatangan dari dalam dan luar daerah</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 mb-2">
+                    <div class="container h-100 p-3 border border-gray rounded-lg shadow text-center">
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-6">
+                                <img class="img-fluid" src="asset/images/transaction.png" alt="">
+                            </div>
+                        </div>
+                        <h5>Lebih banyak transaksi</h5>
+                        <p>Banyaknya kerumunan memungkinkan daganganmu lebih laku dari biasanya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid bg-dark mb-0">
+            <div class="container text-center">
+                <h3 class="font-weight-regular text-white" id="announcement">Kapan pasaran selanjutnya?</h3>
+                    <div class="row justify-content-center mt-4 mb-5">
+                        <div class="col-9 col-sm-9 border rounded-lg bg-light pd-5">
+                            <div class="row text-left">
+                                <div class="col-12 col-sm-4">
+                                    <div class="container mb-3 mt-3 border-left border-dark">
+                                        <p class="mb-0">Pasaran Selanjutnya</p>
+                                        <h3 id="nextPasaran">Wage</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="container mb-3 mt-3 border-left border-dark">
+                                        <p class="mb-0">Di pasar</p>
+                                        <h3 id="nextPasar">Karanggede</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="container border-left border-dark mb-3 mt-3">
+                                        <p class="mb-0">Dalam</p>
+                                        <h3 id="nextHari">2 hari</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <p class="lead text-light">Hari pasaran yang kamu atur untuk <span id="namaPasar" class="font-weight-bold">Pasar Karanggede</span> adalah hari <span id="listPasaran">Wage dan Legi!</span></p>
+                <button type="button" class="btn btn-lg btn-outline-light">Atur Disini</button>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid mb-0 bg-radaitem">
+            <div class="container text-center">
+                <h1 class="display-4 text-white" >Placeholder</h1>
+                <hr class="bg-white mt-5">
+                <p class="lead text-light">Gatau mau diisi apaan, ntar dipikirin lagi</p>
+            </div>
+        </div>
+        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="data.js"></script>
+</html>
